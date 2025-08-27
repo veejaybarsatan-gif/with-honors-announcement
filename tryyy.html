@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grades</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('bg.jpg') no-repeat center center fixed;
+            background-size: cover; /* makes background image fill the entire website */
+            color: #fff; /* text color */
+        }
+
+ 	.header {
+            margin-top: 30px;
+        }
+
+        .header img {
+            width: 120px; /* size of school logo */
+            height: auto;
+        }
+
+        .header h2 {
+            margin-top: 10px;
+            font-size: 24px;
+            color: #000000;
+        }
+
+        .container {
+            padding: 40px;
+            background-color: #DFC5FE; /* transparent box for readability */
+            border-radius: 15px;
+		width: 50%;
+		color: #000000;
+            display: inline-block;
+            margin-top: 5px;
+	position: relative;
+            z-index: 2; /* text stays on top of confetti */
+ 
+}
+
+        h1 {
+            color: #ffeb3b;
+        }
+
+        p {
+            font-size: 22px;
+            margin: 10px 0;
+}
+
+ .average {
+            font-size: 150px;   /* change this to adjust size */
+            font-weight: bold;
+            color: #000000;
+            margin-top: 10px;
+       
+        }
+
+  /* Short message */
+        .message {
+            margin-top: 20px;
+            font-size: 20px;
+            font-style: italic;
+            color: #000000;
+        }
+
+        /* Confetti GIF styling */
+        .confetti-left, .confetti-right {
+            position: fixed;
+            bottom: 0;
+            width: 800px;   /* adjust confetti size */
+            height: auto;   /* keep proportions */
+        }
+
+        .confetti-left {
+            left: 0;
+        }
+
+        .confetti-right {
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    
+   <!-- School logo and name -->
+    <div class="header">
+        <img src="logo.png" alt="School Logo">
+        <h2>ALLACAPAN VOCATIONAL HIGH SCHOOL</h2>
+    </div>
+
+<div class="container">
+        <p><strong>First Quarter Average</p>
+
+	<p class="average">90</p>
+    </div>
+
+<!-- Short message below -->
+    <div class="message">
+        Congratulations! You’ve earned your spot among this quarter’s achievers! 🎉
+    </div>
+
+    <!-- Bigger Confetti GIFs at bottom corners -->
+    <img src="confetti.gif" alt="Confetti Left" class="confetti-left">
+    <img src="confetti.gif" alt="Confetti Right" class="confetti-right">
+</body>
+</html>
